@@ -1,0 +1,10 @@
+@import url("Style.css");
+
+.Terminal {
+  width: 310px;
+  height: 480px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 5px;
+  color: var(font);
+}
