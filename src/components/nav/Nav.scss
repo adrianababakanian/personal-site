@@ -1,0 +1,35 @@
+@import './../../common.scss';
+
+nav {
+  width: 100vw;
+  height: 60px;
+  top: 0;
+  position: fixed;
+  background: rgba(242,241,243,0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+  a:hover, a:visited, a:active, a:link {
+    text-decoration: none;
+    color: #303030;
+  }
+
+  .navWrapper {
+    width: 800px;
+    margin: 0 auto;
+
+    .headerDiv {
+      font-size: 14px;
+      float: right;
+      line-height: 60px;
+      padding: 0 10px;
+      font-family: Muli;
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
+
+      &:hover {
+        border-bottom: 2px solid #303030;
+        font-weight: bold;
+      }
+    }
+  }
+}

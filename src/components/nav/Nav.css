@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Muli|Puritan");
+body {
+  color: #303030; }
+
+nav {
+  width: 100vw;
+  height: 60px;
+  top: 0;
+  position: fixed;
+  background: rgba(242, 241, 243, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); }
+  nav a:hover, nav a:visited, nav a:active, nav a:link {
+    text-decoration: none;
+    color: #303030; }
+  nav .navWrapper {
+    width: 800px;
+    margin: 0 auto; }
+    nav .navWrapper .headerDiv {
+      font-size: 14px;
+      float: right;
+      line-height: 60px;
+      padding: 0 10px;
+      font-family: Muli;
+      border-bottom: 2px solid transparent;
+      cursor: pointer; }
+      nav .navWrapper .headerDiv:hover {
+        border-bottom: 2px solid #303030;
+        font-weight: bold; }

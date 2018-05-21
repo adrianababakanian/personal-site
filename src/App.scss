@@ -1,19 +1,23 @@
 @import url("common.scss");
+
 .App {
   text-align: center;
-  background: -webkit-linear-gradient(-60deg, rgba(204, 178, 213, 0.9), rgba(189, 104, 170, 0.7), #f0a6b2 70%);
+  background: -webkit-linear-gradient(-60deg, rgba(204, 178, 213, 0.9), rgba(189, 104, 170, 0.7), rgba(240, 166, 178, 1) 70%);
   height: 100vh;
   width: 100vw;
   top: 0;
-  font-family: Puritan; }
+  font-family: Puritan;
+}
 
 p {
   font-family: Muli;
-  margin: 0; }
+  margin: 0;
+}
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px; }
+  height: 80px;
+}
 
 .App-header {
   height: 60px;
@@ -21,16 +25,23 @@ p {
   background: rgba(242, 241, 243, 0.2);
   position: fixed;
   top: 0;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
 
 .App-title {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+}
 
 .App-intro {
-  font-size: large; }
+  font-size: large;
+}
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg); }
+    transform: rotate(0deg);
+  }
+
   to {
-    transform: rotate(360deg); } }
+    transform: rotate(360deg);
+  }
+}

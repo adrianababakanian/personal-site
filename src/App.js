@@ -1,19 +1,23 @@
 import React, { Component } from 'react';
+import {
+  BrowserRouter as Router
+} from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
-import Terminal from './Terminal';
+import Terminal from './components/terminal/Terminal';
+import Nav from './components/nav/Nav';
+import Content from './components/content/Content';
 
 class App extends Component {
   render() {
+    let headers = ["About", "Prototyping", "Code", "Design"];
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Hello there!</h1>
-        </header>
-
-        <Terminal/>
-      </div>
+      <Router>
+        <div>
+          <Nav headers={ headers } />
+          <Content headers={ headers } />
+        </div>
+      </Router>
     );
   }
 }
