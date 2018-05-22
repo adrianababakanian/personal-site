@@ -1,4 +1,6 @@
 .test {
   width: 100vw;
   height: 100vh;
-  background: red; }
+  background: red;
+  margin: 0;
+  position: absolute; }

@@ -1,0 +1,26 @@
+.preview {
+  width: 50%;
+  height: 330px;
+  white-space: nowrap;
+  overflow: hidden;
+  float: left;
+  background: white;
+  position: relative; }
+  .preview .layover {
+    width: 100%;
+    height: 100%;
+    line-height: 330px;
+    z-index: 1;
+    background-color: rgba(221, 170, 187, 0.8);
+    opacity: 0;
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    word-wrap: break-word;
+    cursor: pointer;
+    transition: 0.5s; }
+    .preview .layover:hover {
+      opacity: 1;
+      cursor: pointer; }

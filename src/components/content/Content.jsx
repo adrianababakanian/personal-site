@@ -5,8 +5,9 @@ import {
   Link,
   NavLink
 } from 'react-router-dom';
-import Home from './../home/Home';
-import Design from './../design/Design';
+import Home from './home/Home';
+import About from './about/About';
+import Section from './section/Section';
 import './Content.css';
 
 class Content extends Component {
@@ -16,10 +17,12 @@ class Content extends Component {
 
   render() {
     let header_routes = [];
-    let tester = [];
+    let headers = this.props.headers;
+    let about = headers[0];
     header_routes.push(<Route exact path="/" component={ Home } />);
-    for (let header of this.props.headers) {
-      header_routes.push(<Route exact path={ "/" + header.toLowerCase() } component={ header } />);
+    header_routes.push(<Route exact path="/about" component={ About } />);
+    for (let header of headers.slice(1)) {
+      header_routes.push(<Route path={ "/" + header.toLowerCase() } render={() => <Section page={ header } />}/>)
     }
     return (
       <div className="contentWrapper">{ header_routes } </div>

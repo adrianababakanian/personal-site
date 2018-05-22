@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Muli|Puritan");
+@import url("https://fonts.googleapis.com/css?family=Muli|Puritan|Karla");
 body {
   color: #303030; }
 
@@ -8,7 +8,8 @@ nav {
   top: 0;
   position: fixed;
   background: rgba(242, 241, 243, 0.2);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  z-index: 999; }
   nav a:hover, nav a:visited, nav a:active, nav a:link {
     text-decoration: none;
     color: #303030; }
@@ -22,7 +23,10 @@ nav {
       padding: 0 10px;
       font-family: Muli;
       border-bottom: 2px solid transparent;
-      cursor: pointer; }
-      nav .navWrapper .headerDiv:hover {
+      cursor: pointer;
+      transition: 0.1s; }
+      nav .navWrapper .headerDiv.activeHeaderDiv {
         border-bottom: 2px solid #303030;
+        font-weight: bold; }
+      nav .navWrapper .headerDiv:hover {
         font-weight: bold; }
