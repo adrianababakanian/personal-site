@@ -3,8 +3,6 @@ import {
   BrowserRouter as Router
 } from 'react-router-dom';
 import logo from './logo.svg';
-import './App.css';
-import Terminal from './components/terminal/Terminal';
 import Nav from './components/nav/Nav';
 import Content from './components/content/Content';
 

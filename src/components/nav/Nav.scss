@@ -3,11 +3,11 @@
 nav {
   width: 100vw;
   height: 60px;
-  top: 0;
   position: fixed;
   background: rgba(242,241,243,0.2);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   z-index: 999;
+  animation: fade-in-on-load 0.8s;
 
   a:hover, a:visited, a:active, a:link {
     text-decoration: none;
@@ -29,13 +29,23 @@ nav {
       transition: 0.1s;
 
       &.activeHeaderDiv {
-        border-bottom: 2px solid #303030;
+        border-bottom: 2px solid #dab;
         font-weight: bold;
+        color: #dab;
       }
 
       &:hover {
         font-weight: bold;
       }
     }
+  }
+}
+
+@keyframes fade-in-on-load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

@@ -1,5 +1,53 @@
-.test {
-  width: 100vw;
-  height: 100vh;
-  background: white;
+.aboutWrapper {
+  width: 800px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 120px;
+
+  .summary {
+    margin: 0 auto;
+    .content {
+      margin: 0 auto;
+      .text {
+        .mainText {
+          line-height: 26px;
+          font-size: 20px;
+          font-family: Muli;
+          text-align: right;
+          padding: 60px 0;
+          margin: 30px;
+          width: 300px;
+          float: left;
+
+          em {
+            font-weight: 600;
+          }
+
+          .hov {
+            cursor: pointer;
+            &:hover {
+              color: #dab;
+            }
+          }
+        }
+      }
+
+      .picture {
+        height: 400px;
+        width: 300px;
+        background: red;
+        margin: 30px;
+        float: left;
+      }
+    }
+    .elsewhere {
+      .else {
+
+      }
+    }
+  }
+
+  .resume {
+
+  }
 }
