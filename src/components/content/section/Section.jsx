@@ -16,10 +16,10 @@ class Section extends Component {
           A compilation of some of my branding & marketing schemes, illustrations,
           product design, and just-for-fun doodles.
         </div>
-        <Preview />
-        <Preview />
-        <Preview />
-        <Preview />
+        <Preview title="testing"/>
+        <Preview title="testing"/>
+        <Preview title="testing"/>
+        <Preview title="testing"/>
 
 
       </div>
