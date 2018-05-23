@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Muli|Puritan|Karla");
+@import url("https://fonts.googleapis.com/css?family=Muli|Puritan|Karla|Domine");
 body {
   color: #303030; }
 
@@ -9,13 +9,21 @@ nav {
   background: rgba(242, 241, 243, 0.2);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   z-index: 999;
+  top: 0;
   animation: fade-in-on-load 0.8s; }
   nav a:hover, nav a:visited, nav a:active, nav a:link {
     text-decoration: none;
     color: #303030; }
   nav .navWrapper {
     width: 800px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    cursor: auto; }
+    nav .navWrapper .logo {
+      width: 40px;
+      height: 60px;
+      background: #dab;
+      margin: 0 auto;
+      cursor: pointer; }
     nav .navWrapper .headerDiv {
       font-size: 14px;
       float: right;

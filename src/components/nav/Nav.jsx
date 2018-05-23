@@ -20,7 +20,12 @@ class Nav extends Component {
                                 </NavLink>);}
 
     return (
-      <nav> <div className="navWrapper">{ header_divs }</div> </nav>
+      <nav>
+        <div className="navWrapper">
+          { header_divs }
+          <NavLink to={"/"}> <div className="logo"></div> </NavLink>
+        </div>
+      </nav>
     )
   }
 }

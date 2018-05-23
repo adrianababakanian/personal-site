@@ -1,13 +1,14 @@
 .aboutWrapper {
   width: 800px;
-  height: 200px;
   margin: 0 auto;
   margin-top: 120px;
+  position: relative;
+  overflow: auto;
 
   .summary {
-    margin: 0 auto;
     .content {
       margin: 0 auto;
+      overflow: auto;
       .text {
         .mainText {
           line-height: 26px;
@@ -48,6 +49,13 @@
   }
 
   .resume {
+    width: 100%;
+    overflow: auto;
 
+    .resumeSection {
+      font-size: 22px;
+      font-family: Domine;
+      padding: 40px 0 0 0;
+    }
   }
 }

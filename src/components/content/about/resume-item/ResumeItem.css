@@ -1,0 +1,24 @@
+.test {
+  width: 100%;
+  overflow: auto;
+  position: relative; }
+  .test .section {
+    font-family: Muli, sans-serif;
+    font-size: 18px;
+    font-weight: 800px;
+    color: #dab;
+    padding: 15px 0 5px 0; }
+    .test .section.edu {
+      color: #303030;
+      background: red; }
+  .test .title {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: Karla, sans-serif;
+    padding: 5px 0 0 0; }
+  .test .content {
+    padding: 5px 0;
+    max-width: 700px;
+    line-height: 24px;
+    font-family: Muli;
+    font-size: 16px; }

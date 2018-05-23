@@ -7,6 +7,7 @@ nav {
   background: rgba(242,241,243,0.2);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   z-index: 999;
+  top: 0;
   animation: fade-in-on-load 0.8s;
 
   a:hover, a:visited, a:active, a:link {
@@ -17,6 +18,15 @@ nav {
   .navWrapper {
     width: 800px;
     margin: 0 auto;
+    cursor: auto;
+
+    .logo {
+      width: 40px;
+      height: 60px;
+      background: #dab;
+      margin: 0 auto;
+      cursor: pointer;
+    }
 
     .headerDiv {
       font-size: 14px;
