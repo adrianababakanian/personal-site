@@ -8,14 +8,10 @@ class Section extends Component {
   }
 
   render() {
-    let page = this.props.page;
     return (
       <div className="sectionWrapper">
-        <div className="sectionTitle">{ page }</div>
-        <div className="sectionSubtitle">
-          A compilation of some of my branding & marketing schemes, illustrations,
-          product design, and just-for-fun doodles.
-        </div>
+        <div className="sectionTitle">{ this.props.page }</div>
+        <div className="sectionSubtitle"> { this.props.sub } </div>
         <Preview title="testing"/>
         <Preview title="testing"/>
         <Preview title="testing"/>
