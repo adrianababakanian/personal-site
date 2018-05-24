@@ -1,0 +1,9 @@
+.else {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  background: #dab;
+  border-radius: 30px;
+  float: left;
+  display: inline;
+  cursor: pointer; }

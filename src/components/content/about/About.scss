@@ -6,24 +6,25 @@
   overflow: auto;
 
   .summary {
+    overflow: auto;
     .content {
       margin: 0 auto;
       overflow: auto;
       .text {
+        width: 300px;
+        overflow: auto;
+        float: left;
+        padding: 60px 0;
+        margin: 30px;
         .mainText {
           line-height: 26px;
           font-size: 20px;
           font-family: Muli;
           text-align: right;
-          padding: 60px 0;
-          margin: 30px;
-          width: 300px;
-          float: left;
-
+          padding: 0 0 10px 0;
           em {
             font-weight: 600;
           }
-
           .hov {
             cursor: pointer;
             &:hover {
@@ -31,31 +32,22 @@
             }
           }
         }
+        .subText {
+          text-align: right;
+          font-family: Muli;
+          font-size: 16px;
+          width: 300px;
+          padding: 10px 0;
+        }
       }
 
       .picture {
-        height: 400px;
-        width: 300px;
-        background: red;
-        margin: 30px;
+        height: 470px;
+        width: 350px;
+        background: #dab;
+        margin: 51px 30px;
         float: left;
       }
-    }
-    .elsewhere {
-      .else {
-
-      }
-    }
-  }
-
-  .resume {
-    width: 100%;
-    overflow: auto;
-
-    .resumeSection {
-      font-size: 22px;
-      font-family: Domine;
-      padding: 40px 0 0 0;
     }
   }
 }
