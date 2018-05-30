@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import ResumeItem from './resume-item/ResumeItem';
 import Elsewhere from './../elsewhere/Elsewhere';
 import Resume from './resume/Resume';
+import ResumeItem from './resume/resume-item/ResumeItem';
 import './About.css';
 
 class About extends Component {

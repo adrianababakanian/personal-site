@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
   NavLink
 } from 'react-router-dom';
+import Logo from './../logo/Logo';
 import './Nav.css';
 
 class Nav extends Component {
@@ -18,12 +19,11 @@ class Nav extends Component {
                                 activeClassName="activeHeaderDiv">
                                 { header }
                                 </NavLink>);}
-
     return (
       <nav>
         <div className="navWrapper">
           { header_divs }
-          <NavLink to={"/"}> <div className="logo"></div> </NavLink>
+          <NavLink to={"/"}> <Logo location={this.props.location} width="30px" /> </NavLink>
         </div>
       </nav>
     )

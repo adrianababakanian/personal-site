@@ -1,0 +1,13 @@
+img {
+  width: 100px; }
+
+.cls-1 {
+  stroke-miterlimit: 10; }
+
+.dab {
+  fill: #dab;
+  stroke: #dab; }
+
+.gray {
+  fill: #303030;
+  stroke: #303030; }
