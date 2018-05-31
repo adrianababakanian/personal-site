@@ -23,6 +23,14 @@
     cursor: pointer;
     transition: 0.5s;
 
+    &.orange { background: #f29249; }
+
+    &.green { background: #b0e695; }
+
+    &.sky { background: #75CFFF; }
+
+    &.blue { background: #475dcc; }
+
     &:hover {
       opacity: 1;
       cursor: pointer;

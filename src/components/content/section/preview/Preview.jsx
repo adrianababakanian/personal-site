@@ -9,7 +9,7 @@ class Preview extends Component {
   render() {
     return (
       <div className="preview">
-        <div className="layover"> { this.props.title } </div>
+        <div className={"layover " + this.props.color}> { this.props.title } </div>
       </div>
     )
   }

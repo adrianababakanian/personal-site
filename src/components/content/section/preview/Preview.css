@@ -21,6 +21,14 @@
     word-wrap: break-word;
     cursor: pointer;
     transition: 0.5s; }
+    .preview .layover.orange {
+      background: #f29249; }
+    .preview .layover.green {
+      background: #b0e695; }
+    .preview .layover.sky {
+      background: #75CFFF; }
+    .preview .layover.blue {
+      background: #475dcc; }
     .preview .layover:hover {
       opacity: 1;
       cursor: pointer; }

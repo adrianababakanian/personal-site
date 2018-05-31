@@ -7,9 +7,9 @@ class Home extends Component {
     return (
       <div className="pageWrap homePage">
         <Terminal colors={[
-          "magenta",
-          "pink",
-          "lavender"
+          "blue",
+          "orange",
+          "green"
         ]}/>
       </div>
     )

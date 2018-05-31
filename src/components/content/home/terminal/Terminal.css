@@ -38,12 +38,12 @@
       float: left; }
       .Terminal .circleWrap .circle:hover {
         transform: scale(1.2); }
-      .Terminal .circleWrap .circle.lavender {
-        background: #dab; }
-      .Terminal .circleWrap .circle.pink {
-        background: #EFA6B2; }
-      .Terminal .circleWrap .circle.magenta {
-        background: #D06C96; }
+      .Terminal .circleWrap .circle.blue {
+        background: #475dcc; }
+      .Terminal .circleWrap .circle.orange {
+        background: #f29249; }
+      .Terminal .circleWrap .circle.green {
+        background: #b0e695; }
   .Terminal .terminalText {
     width: 75%;
     margin: 0 auto;

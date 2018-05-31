@@ -14,10 +14,10 @@ class Nav extends Component {
   render() {
     let header_divs = [];
     for (let header of this.props.headers) {
-      header_divs.push(<NavLink to={ '/' + header.toLowerCase() }
-                                className="headerDiv"
+      header_divs.push(<NavLink to={ '/' + header[0].toLowerCase() }
+                                className={"headerDiv " + header[1]}
                                 activeClassName="activeHeaderDiv">
-                                { header }
+                                { header[0] }
                                 </NavLink>);}
     return (
       <nav>

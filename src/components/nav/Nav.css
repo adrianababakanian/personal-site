@@ -1,8 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Muli|Puritan|Karla|Domine");
-body {
-  color: #303030;
-  background: #fff; }
-
+@import url(./../../assets/style/common.css);
 nav {
   width: 100vw;
   height: 60px;
@@ -35,9 +31,19 @@ nav {
       cursor: pointer;
       transition: 0.1s; }
       nav .navWrapper .headerDiv.activeHeaderDiv {
-        border-bottom: 2px solid #dab;
-        font-weight: bold;
-        color: #dab; }
+        font-weight: bold; }
+        nav .navWrapper .headerDiv.activeHeaderDiv.orange {
+          color: #f29249;
+          border-bottom: 2px solid #f29249; }
+        nav .navWrapper .headerDiv.activeHeaderDiv.green {
+          color: #b0e695;
+          border-bottom: 2px solid #b0e695; }
+        nav .navWrapper .headerDiv.activeHeaderDiv.sky {
+          color: #75CFFF;
+          border-bottom: 2px solid #75CFFF; }
+        nav .navWrapper .headerDiv.activeHeaderDiv.blue {
+          color: #475dcc;
+          border-bottom: 2px solid #475dcc; }
       nav .navWrapper .headerDiv:hover {
         font-weight: bold; }
 

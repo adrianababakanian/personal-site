@@ -24,10 +24,13 @@ class Content extends Component {
                 "Some visual manifestations of my passions for both engineering and art in the form of bluetooth-controlled robots, drawing machines, geared ponds, and more."];
     header_routes.push(<Route exact path="/" component={ Home } />);
     header_routes.push(<Route exact path="/about" component={ About } />);
+    let sliced = headers.slice(1);
     for (let sub in subs) {
-      header_routes.push(<Route path={ "/" + (headers.slice(1)[sub]).toLowerCase() }
-                                render={() => <Section page={ headers.slice(1)[sub] }
-                                                       sub={ subs[sub]} />}/>);
+      let curr = sliced[sub];
+      header_routes.push(<Route path={ "/" + (curr[0]).toLowerCase() }
+                                 render={() => <Section page={ curr[0] }
+                                                        sub={ subs[sub] }
+                                                        color={ curr[1] } />} />);
     }
     return (
       <div className="contentWrapper">{ header_routes } </div>

@@ -1,4 +1,4 @@
-@import './../../common.scss';
+@import './../../assets/style/common.css';
 
 nav {
   width: 100vw;
@@ -39,9 +39,15 @@ nav {
       transition: 0.1s;
 
       &.activeHeaderDiv {
-        border-bottom: 2px solid #dab;
         font-weight: bold;
-        color: #dab;
+
+        &.orange { color: #f29249; border-bottom: 2px solid #f29249; }
+
+        &.green { color: #b0e695; border-bottom: 2px solid #b0e695; }
+
+        &.sky { color: #75CFFF; border-bottom: 2px solid #75CFFF; }
+
+        &.blue { color: #475dcc; border-bottom: 2px solid #475dcc; }
       }
 
       &:hover {

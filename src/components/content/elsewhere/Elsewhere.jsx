@@ -5,7 +5,7 @@ import './Elsewhere.css';
 const Elsewhere = (props) => {
   let links = [];
   for (let link of props.links) {
-    links.push(<Else title={link} />);
+    links.push(<Else color={link} />);
   }
   return (
     <div className="elsewhere">
