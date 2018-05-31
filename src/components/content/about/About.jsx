@@ -38,7 +38,7 @@ class About extends Component {
             <div className="picture"><img src={"./../../../assets/images/me.png"}/></div>
           </div>
         </div>
-        <Elsewhere links={["#f29249", "#ebc446", "#b0e695", "#75cff0", "#475dcc"]} />
+        <Elsewhere />
         <Resume />
       </div>
     )

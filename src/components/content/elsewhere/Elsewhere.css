@@ -4,3 +4,14 @@
   left: 50%;
   transform: translateX(-50%);
   margin: 40px 0; }
+  .elsewhere .else {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 30px;
+    background: #fff;
+    float: left;
+    display: inline;
+    cursor: pointer; }
+    .elsewhere .else svg {
+      margin: 0; }

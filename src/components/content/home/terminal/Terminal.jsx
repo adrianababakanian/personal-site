@@ -21,7 +21,7 @@ class Terminal extends React.Component {
           <div className="terminalMain">
             I'm Adriana &mdash; a
             <em className="hov"> software engineer</em>,
-            <em className="hov"> graphic designer</em>, &
+            <em className="hov"> product designer</em>, &
             <em className="hov"> web developer </em> studying
             Math & Computer Science at the
             University of California, Berkeley.
