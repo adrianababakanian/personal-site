@@ -32,6 +32,10 @@ class Terminal extends React.Component {
             love of art history, literature, and sushi along
             the way!
           </div>
+          <div className="terminalLink">
+            Feeling hacky? &rarr;
+            <div className="bottom"></div>
+          </div>
         </div>
       </div>
     );

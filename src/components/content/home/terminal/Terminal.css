@@ -63,6 +63,20 @@
       font-family: Muli;
       font-size: 14px;
       line-height: 20px; }
+    .Terminal .terminalText .terminalLink {
+      width: 140px;
+      font-family: Muli;
+      font-size: 16px;
+      padding: 8px 0;
+      font-weight: 800;
+      color: #b0e695;
+      margin: 15px 0;
+      cursor: pointer; }
+      .Terminal .terminalText .terminalLink .bottom {
+        width: 100%;
+        height: 20px;
+        margin: -10px 0 0 -8px;
+        background: #b0e69522; }
 
 @keyframes float {
   0% {
