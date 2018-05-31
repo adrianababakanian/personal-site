@@ -7,5 +7,13 @@
   float: left;
   display: inline;
   cursor: pointer; }
+  .else:hover {
+    animation: spin 0.5s; }
   .else svg {
     margin: 0; }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }

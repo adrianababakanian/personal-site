@@ -30,15 +30,18 @@ class About extends Component {
                 & technology.
               </div>
               <div className="subText">
-                You're likely to catch me with my nose in a book &#x1F4D6;, sipping matcha &#x1F375;,
-                hacking something up &#x1F4BB;, doodling &#x1F3A8;, exploring SF &#x1F309;, or in pursuit of
-                tempura &#x1F364;.
+                You're likely to catch me with my nose in a book &#x1F4D6;,
+                sipping matcha &#x1F375;,
+                hacking something up &#x1F4BB;,
+                doodling &#x1F3A8;,
+                exploring SF &#x1F309;,
+                or in pursuit of tempura &#x1F364;.
               </div>
             </div>
             <div className="picture"><img src={"./../../../assets/images/me.png"}/></div>
           </div>
+          <Elsewhere />
         </div>
-        <Elsewhere />
         <Resume />
       </div>
     )

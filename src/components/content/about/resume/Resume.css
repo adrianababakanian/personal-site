@@ -1,7 +1,12 @@
 .resume {
   width: 100%;
   overflow: auto;
-  margin: 200px 0; }
+  margin: 80px 0; }
+  .resume .line {
+    height: 1px;
+    max-width: 400px;
+    background: #E8E8E8;
+    margin: 0 0 80px 0; }
   .resume .resumeSection {
     font-size: 22px;
     font-family: Domine;

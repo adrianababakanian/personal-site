@@ -5,7 +5,8 @@
   position: relative;
   overflow: auto; }
   .aboutWrapper .summary {
-    overflow: auto; }
+    overflow: auto;
+    height: calc(100vh - 120px); }
     .aboutWrapper .summary .content {
       margin: 0 auto;
       overflow: auto; }
@@ -13,7 +14,7 @@
         width: 300px;
         overflow: auto;
         float: left;
-        padding: 60px 0;
+        padding: 50px 0;
         margin: 30px; }
         .aboutWrapper .summary .content .text .mainText {
           line-height: 26px;

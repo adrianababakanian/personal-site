@@ -5,6 +5,7 @@ import './Resume.css';
 const Resume = () => {
   return (
     <div className="resume">
+      <div className="line"></div>
       <div className="resumeSection"> Education </div>
       <ResumeItem section="University of California, Berkeley"
                   title="b.a. applied mathematics & computer science"
