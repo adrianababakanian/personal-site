@@ -16,7 +16,7 @@ const Elsewhere = () => {
   return (
     <div className="elsewhere">
       {/* {elses} */}
-      <Github colorStyle={"#f29249"} />
+      <Github colorStyle={"#f9886c"} />
       <Linkedin colorStyle={"#ebc446"}/>
       <Pinterest colorStyle={"#b0e695"}/>
       <Email colorStyle={"#75cff0"}/>

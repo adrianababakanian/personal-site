@@ -1,5 +1,5 @@
 .Terminal {
-  width: 310px;
+  width: 420px;
   height: 490px;
   background: white;
   border-radius: 5px;
@@ -26,8 +26,8 @@
     width: 90px;
     height: 40px;
     position: absolute;
-    left: 20px;
-    top: 0;
+    left: 45px;
+    top: 2px;
     cursor: pointer; }
     .Terminal .circleWrap .circle {
       width: 15px;
@@ -39,27 +39,30 @@
       .Terminal .circleWrap .circle:hover {
         transform: scale(1.2); }
       .Terminal .circleWrap .circle.blue {
-        background: #475dcc; }
+        background: #75CFFF; }
       .Terminal .circleWrap .circle.orange {
-        background: #f29249; }
+        background: #f9886c; }
       .Terminal .circleWrap .circle.green {
         background: #b0e695; }
   .Terminal .terminalText {
-    width: 75%;
+    width: 70%;
     margin: 0 auto;
     margin-top: 50px;
-    text-align: left; }
+    text-align: left;
+    padding: 0 20px 0 0; }
     .Terminal .terminalText .terminalTitle {
       font-family: Puritan;
       font-size: 26px; }
     .Terminal .terminalText .terminalMain {
       font-family: Muli;
       font-size: 18px;
-      margin-top: 5px;
-      margin-bottom: 25px; }
+      margin-top: 15px;
+      margin-bottom: 25px;
+      line-height: 27px; }
     .Terminal .terminalText .terminalSub {
       font-family: Muli;
-      font-size: 14px; }
+      font-size: 14px;
+      line-height: 20px; }
 
 @keyframes float {
   0% {

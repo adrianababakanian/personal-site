@@ -1,5 +1,5 @@
 .Terminal {
-  width: 310px;
+  width: 420px;
   height: 490px;
   background: white;
   border-radius: 5px;
@@ -29,8 +29,8 @@
     width: 90px;
     height: 40px;
     position: absolute;
-    left: 20px;
-    top: 0;
+    left: 45px;
+    top: 2px;
     cursor: pointer;
 
     .circle {
@@ -43,17 +43,18 @@
       &:hover {
         transform: scale(1.2);
       }
-      &.blue { background: #475dcc; }
-      &.orange { background: #f29249; }
+      &.blue { background: #75CFFF; }
+      &.orange { background: #f9886c; }
       &.green {background: #b0e695; }
     }
   }
 
   .terminalText {
-    width: 75%;
+    width: 70%;
     margin: 0 auto;
     margin-top: 50px;
     text-align: left;
+    padding: 0 20px 0 0;
 
     .terminalTitle {
       font-family: Puritan;
@@ -63,13 +64,15 @@
     .terminalMain {
       font-family: Muli;
       font-size: 18px;
-      margin-top: 5px;
+      margin-top: 15px;
       margin-bottom: 25px;
+      line-height: 27px;
     }
 
     .terminalSub {
       font-family: Muli;
       font-size: 14px;
+      line-height: 20px;
     }
   }
 }

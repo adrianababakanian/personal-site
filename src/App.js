@@ -8,7 +8,7 @@ import Content from './components/content/Content';
 
 class App extends Component {
   render() {
-    let headers = [["About", "blue"], ["Prototyping", "sky"], ["Code", "green"], ["Design", "orange"]];
+    let headers = [["About", "blue"], ["Prototyping", "orange"], ["Code", "green"], ["Design", "sky"]];
     return (
       <Router>
         <div>

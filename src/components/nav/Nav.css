@@ -33,8 +33,8 @@ nav {
       nav .navWrapper .headerDiv.activeHeaderDiv {
         font-weight: bold; }
         nav .navWrapper .headerDiv.activeHeaderDiv.orange {
-          color: #f29249;
-          border-bottom: 2px solid #f29249; }
+          color: #f9886c;
+          border-bottom: 2px solid #f9886c; }
         nav .navWrapper .headerDiv.activeHeaderDiv.green {
           color: #b0e695;
           border-bottom: 2px solid #b0e695; }

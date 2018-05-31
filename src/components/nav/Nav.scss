@@ -5,6 +5,7 @@ nav {
   height: 60px;
   position: fixed;
   background: rgba(242,241,243,0.2);
+  // background: #fcfcfc;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   z-index: 999;
   top: 0;
@@ -41,7 +42,7 @@ nav {
       &.activeHeaderDiv {
         font-weight: bold;
 
-        &.orange { color: #f29249; border-bottom: 2px solid #f29249; }
+        &.orange { color: #f9886c; border-bottom: 2px solid #f9886c; }
 
         &.green { color: #b0e695; border-bottom: 2px solid #b0e695; }
 
