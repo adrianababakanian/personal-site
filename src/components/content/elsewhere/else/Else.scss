@@ -3,7 +3,12 @@
   height: 30px;
   margin: 5px;
   border-radius: 30px;
+  background: #fff;
   float: left;
   display: inline;
   cursor: pointer;
+
+  svg {
+    margin: 0;
+  }
 }
