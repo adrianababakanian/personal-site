@@ -1,17 +1,16 @@
-img {
-  width: 100px;
-}
+svg {
+  margin: 0 auto;
+  .cls-1 {
+    stroke-miterlimit:10;
 
-.cls-1 {
-  stroke-miterlimit:10;
-}
+    &.dab {
+      fill: #dab;
+      stroke:#dab;
+    }
 
-.dab {
-  fill: #dab;
-  stroke:#dab;
-}
-
-.gray {
-  fill: #303030;
-  stroke:#303030;
+    &.gray {
+      fill: #303030;
+      stroke:#303030;
+    }
+  }
 }

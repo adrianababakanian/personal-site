@@ -14,7 +14,7 @@ class Nav extends Component {
   render() {
     let header_divs = [];
     for (let header of this.props.headers) {
-      header_divs.push(<NavLink to={ "/" + header.toLowerCase() }
+      header_divs.push(<NavLink to={ '/' + header.toLowerCase() }
                                 className="headerDiv"
                                 activeClassName="activeHeaderDiv">
                                 { header }
@@ -23,7 +23,7 @@ class Nav extends Component {
       <nav>
         <div className="navWrapper">
           { header_divs }
-          <NavLink to={"/"}> <Logo location={this.props.location} width="30px" /> </NavLink>
+          <NavLink to={'/'}> <Logo location={this.props.location} width="30px" /> </NavLink>
         </div>
       </nav>
     )
