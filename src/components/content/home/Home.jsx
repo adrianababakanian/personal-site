@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Terminal from './terminal/Terminal';
+import Footer from './../../footer/Footer';
 import './Home.css';
 
 class Home extends Component {
@@ -11,6 +12,7 @@ class Home extends Component {
           "green",
           "orange"
         ]}/>
+        <Footer />
       </div>
     )
   }

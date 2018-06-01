@@ -20,9 +20,9 @@ class Terminal extends React.Component {
           <div className="terminalTitle">Hello world!</div>
           <div className="terminalMain">
             I'm Adriana &mdash; a
-            <em className="hov"> software engineer</em>,
-            <em className="hov"> product designer</em>, &
-            <em className="hov"> web developer </em> studying
+            <em className="hov blue"> software engineer</em>,
+            <em className="hov green"> product designer</em>, &
+            <em className="hov orange"> web developer </em> studying
             Math & Computer Science at the
             University of California, Berkeley.
           </div>
