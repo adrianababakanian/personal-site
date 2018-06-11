@@ -3,6 +3,7 @@ import Elsewhere from './../elsewhere/Elsewhere';
 import Resume from './resume/Resume';
 import ResumeItem from './resume/resume-item/ResumeItem';
 import './About.css';
+import me from './../../../assets/images/me.png';
 
 class About extends Component {
   constructor(props) {
@@ -38,7 +39,7 @@ class About extends Component {
                 or in pursuit of tempura &#x1F364;.
               </div>
             </div>
-            <div className="picture"><img src={"./../../../assets/images/me.png"}/></div>
+            <div className="picture"><img src={me} className="me"/></div>
           </div>
           <Elsewhere />
         </div>

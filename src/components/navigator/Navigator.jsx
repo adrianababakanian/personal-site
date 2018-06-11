@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import './Navigator.css';
 
 class Navigator extends Component {
@@ -8,7 +8,7 @@ class Navigator extends Component {
   static propTypes = {
     match: PropTypes.object.isRequired,
     location: PropTypes.object.isRequired,
-    history: PropTypes.object.isRequried
+    history: PropTypes.object.isRequired
   }
 
   constructor(props) {
@@ -44,9 +44,5 @@ class Navigator extends Component {
     )
   }
 }
-
-// const Navigator = withRouter(({ history }) => (
-//   <button type='button' onClick={() => { history.push('/design')}}> to design we go! </button>
-// ))
 
 export default withRouter(Navigator);
