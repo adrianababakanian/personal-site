@@ -3,8 +3,10 @@ import {
   BrowserRouter as Router
 } from 'react-router-dom';
 import logo from './logo.svg';
+import Navigator from './components/navigator/Navigator';
 import Nav from './components/nav/Nav';
 import Content from './components/content/Content';
+import './index.css';
 
 class App extends Component {
   render() {
@@ -12,8 +14,11 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Nav headers={ headers } />
-          <Content headers={ headers } />
+          <Navigator />
+          <div className="main">
+            <Nav headers={ headers } />
+            <Content headers={ headers } />
+          </div>
         </div>
       </Router>
     );

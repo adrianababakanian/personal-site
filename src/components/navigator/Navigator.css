@@ -1,2 +1,26 @@
+.navigator {
+  width: 420px;
+  height: 100vh;
+  background: white;
+  position: fixed;
+  z-index: 2000;
+  float: left;
+  position: absolute; }
+
 button {
   margin-top: 500px; }
+
+input {
+  height: calc(100vh - 80px);
+  width: 100%;
+  position: absolute;
+  font-family: Muli, sans-serif;
+  font-size: 16px;
+  top: 0;
+  left: 0;
+  padding: 40px;
+  outline: 0;
+  border: none; }
+
+input:focus {
+  outline: 0; }

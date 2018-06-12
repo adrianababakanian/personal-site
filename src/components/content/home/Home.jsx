@@ -8,7 +8,6 @@ class Home extends Component {
   render() {
     return (
       <div className="pageWrap homePage">
-        <Navigator />
         <Terminal colors={[
           "blue",
           "green",

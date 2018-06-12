@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Else from './else/Else';
 import Github from './else/svg/Github';
 import Linkedin from './else/svg/Linkedin';
@@ -15,7 +15,6 @@ const Elsewhere = () => {
   }
   return (
     <div className="elsewhere">
-      {/* {elses} */}
       <Github colorStyle={"#f9886c"} />
       <Linkedin colorStyle={"#ebc446"}/>
       <Pinterest colorStyle={"#b0e695"}/>

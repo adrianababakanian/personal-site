@@ -17,6 +17,7 @@ class Navigator extends Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleEnter = this.handleEnter.bind(this);
   }
 
   handleChange(event) {
@@ -29,17 +30,25 @@ class Navigator extends Component {
     event.preventDefault();
   }
 
+  handleEnter(event) {
+    if (event.keyCode == 13) {
+      alert("henlo!");
+    }
+    event.preventDefault();
+  }
+
   render() {
     const { match, location, history } = this.props;
     return (
-      <div>
-        <button type='button' onClick={() => { history.push('/design')}}> to design we go! </button>
-        <form onSubmit={this.handleSubmit} >
+      <div className="navigator">
+        {/* <button type='button' onClick={() => { history.push('/design')}}> to design we go! </button> */}
+        <input  />
+        {/* <form onSubmit={this.handleSubmit} >
           <label>
             Name:
             <input type="text" value={this.state.value} onChange={this.handleChange}/>
           </label>
-        </form>
+        </form> */}
       </div>
     )
   }

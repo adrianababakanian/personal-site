@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Terminal.css';
 
-class Terminal extends React.Component {
+class Terminal extends Component {
   constructor(props) {
     super(props);
   }
@@ -33,8 +33,9 @@ class Terminal extends React.Component {
             the way!
           </div>
           <div className="terminalLink">
-            Feeling hacky? &rarr;
-            <div className="bottom"></div>
+             &#x1F375;
+            {/* &rarr; */}
+            {/* <div className="bottom"></div> */}
           </div>
         </div>
       </div>
