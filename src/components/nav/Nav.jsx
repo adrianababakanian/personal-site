@@ -16,7 +16,8 @@ class Nav extends Component {
     for (let header of this.props.headers) {
       header_divs.push(<NavLink to={ '/' + header[0].toLowerCase() }
                                 className={"headerDiv " + header[1]}
-                                activeClassName="activeHeaderDiv">
+                                activeClassName="activeHeaderDiv"
+                                key={header[1]}>
                                 { header[0] }
                                 </NavLink>);}
     return (

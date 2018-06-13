@@ -9,7 +9,7 @@ class Terminal extends Component {
     let colors = this.props.colors;
     let circle_divs = [];
     colors.map(color =>
-      circle_divs.push(<div className={"circle " + color }></div>)
+      circle_divs.push(<div className={"circle " + color } key={color}></div>)
     );
     return (
       <div className="Terminal">

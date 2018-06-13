@@ -27,15 +27,16 @@ class Content extends Component {
                 "A compilation of some of my branding & marketing schemes, \
                  illustrations, product design, and just-for-fun doodles."];
 
-    header_routes.push(<Route exact path="/" component={ Home } />);
-    header_routes.push(<Route exact path="/about" component={ About } />);
+    header_routes.push(<Route exact path="/" component={ Home } key="home" />);
+    header_routes.push(<Route exact path="/about" component={ About } key="about" />);
     let sliced = headers.slice(1);
     for (let sub in subs) {
       let curr = sliced[sub];
       header_routes.push(<Route path={ "/" + (curr[0]).toLowerCase() }
-                                 render={() => <Section page={ curr[0] }
-                                                        sub={ subs[sub] }
-                                                        color={ curr[1] } />} />);
+                                key={(curr[0]).toLowerCase()}
+                                render={() => <Section page={ curr[0] }
+                                                       sub={ subs[sub] }
+                                                       color={ curr[1] } />} />);
     }
     return (
       <div className="contentWrapper">{ header_routes } </div>
