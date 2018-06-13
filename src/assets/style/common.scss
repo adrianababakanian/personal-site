@@ -1,4 +1,10 @@
 $font-color: #253044;
+$blue: #475dcc;
+$orange: #f9886c;
+$green: #b0e695;
+$sky: #75CFFF;
+$yellow: #ebc446;
+
 $gradient: -webkit-linear-gradient(-60deg,
                                     rgba(204, 178, 213, 0.9),
                                     rgba(189, 104, 170, 0.7),
@@ -10,11 +16,3 @@ body {
   color: $font-color;
   background: #f5f7f944;
 }
-
-// .orange { background: #f29249; fill: #f29249; color: #f29249 }
-//
-// .green { background: #b0e695; fill: #b0e695; color: #f29249 }
-//
-// .sky { background: #75CFFF; fill: #75CFFF; color: #f29249 }
-//
-// .blue { background: #475dcc; fill: #475dcc; color: #f29249 }

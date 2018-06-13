@@ -28,7 +28,7 @@ const Content = (props) => {
                                                      color={ curr[1] } />} />);
   }
   return (
-    <div className="contentWrapper">{ header_routes } </div>
+    <div className="content">{ header_routes } </div>
   )
 }
 

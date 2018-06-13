@@ -3,21 +3,16 @@ import {
   BrowserRouter as Router
 } from 'react-router-dom';
 import Navigator from './components/navigator/Navigator';
-import Nav from './components/nav/Nav';
-import Content from './components/content/Content';
+import Main from './components/main/Main';
 import './index.css';
 
 class App extends Component {
   render() {
-    let headers = [["About", "blue"], ["Prototyping", "orange"], ["Code", "green"], ["Design", "sky"]];
     return (
       <Router>
         <div>
           <Navigator />
-          <div className="main">
-            <Nav headers={ headers } />
-            <Content headers={ headers } />
-          </div>
+          <Main />
         </div>
       </Router>
     );

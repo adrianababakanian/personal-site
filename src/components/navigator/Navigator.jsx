@@ -25,16 +25,27 @@ class Navigator extends Component {
   }
 
   handleSubmit(event) {
-    const { match, location, history } = this.props;
+    const { history } = this.props;
     history.push(this.state.value);
     event.preventDefault();
   }
 
   handleEnter(event) {
-    if (event.keyCode === 13) {
-      alert("henlo!");
+    const { history } = this.props;
+    if (event.key == 'Enter') {
+      event.preventDefault();
+      history.push(this.state.value);
     }
-    event.preventDefault();
+    // event.preventDefault();
+  }
+
+  // Every time submit new command, add it to stack of previoulsy-excuted commands.
+  handleCommand(event) {
+  }
+
+  // Clear the stack of previously-excuted commands displayed in the navigator.
+  clearCommands() {
+
   }
 
   render() {
@@ -42,7 +53,7 @@ class Navigator extends Component {
     return (
       <div className="navigator">
         {/* <button type='button' onClick={() => { history.push('/design')}}> to design we go! </button> */}
-        <input  />
+        <input onKeyPress={this.handleEnter} onChange={this.handleChange} />
         {/* <form onSubmit={this.handleSubmit} >
           <label>
             Name:

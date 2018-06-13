@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Muli|Puritan|Karla|Domine");
+body {
+  color: #253044;
+  background: #f5f7f944; }
+
 .preview {
   width: 50%;
   height: 330px;

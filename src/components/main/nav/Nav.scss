@@ -1,4 +1,4 @@
-@import './../../assets/style/common.css';
+@import './../../../assets/style/common.scss';
 
 nav {
   width: 100%;
@@ -42,13 +42,13 @@ nav {
       &.activeHeaderDiv {
         font-weight: bold;
 
-        &.orange { color: #f9886c; border-bottom: 2px solid #f9886c; }
+        &.orange { color: $orange; border-bottom: 2px solid $orange; }
 
-        &.green { color: #b0e695; border-bottom: 2px solid #b0e695; }
+        &.green { color: $green; border-bottom: 2px solid $green; }
 
-        &.sky { color: #75CFFF; border-bottom: 2px solid #75CFFF; }
+        &.sky { color: $sky; border-bottom: 2px solid $sky; }
 
-        &.blue { color: #475dcc; border-bottom: 2px solid #475dcc; }
+        &.blue { color: $blue; border-bottom: 2px solid $blue; }
       }
 
       &:hover {
@@ -59,10 +59,6 @@ nav {
 }
 
 @keyframes fade-in-on-load {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
