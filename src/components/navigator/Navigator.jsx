@@ -34,9 +34,15 @@ class Navigator extends Component {
   // of previously-executed commands.
   handleEnter(event) {
     const { history } = this.props;
-    if (event.key == 'Enter') {
+    if (event.key === 'Enter') {
       event.preventDefault();
-      history.push(this.state.value);
+      let commands = (this.state.value).split(' ');
+      if (commands[1] === '~') {
+       history.push("/");
+      }
+      else if (commands[0] === 'cd') {
+        history.push("/"+commands[1]);
+      }
     }
   }
 
