@@ -1,3 +1,5 @@
+@import './../../../../../assets/style/common.scss';
+
 .Terminal {
   width: 420px;
   height: 490px;
@@ -21,9 +23,9 @@
     font-style: normal;
     &:hover {
       color: #dab;
-      &.blue { color: #75CFFF; }
-      &.orange { color: #f9886c; }
-      &.green {color: #b0e695; }
+      &.sky { color: $sky; }
+      &.orange { color: $orange; }
+      &.green {color: $green; }
     }
   }
 
@@ -52,9 +54,9 @@
       &:hover {
         transform: scale(1.2);
       }
-      &.blue { background: #75CFFF; }
-      &.orange { background: #f9886c; }
-      &.green {background: #b0e695; }
+      &.sky { background: $sky; }
+      &.orange { background: $orange; }
+      &.green {background: $green; }
     }
   }
 

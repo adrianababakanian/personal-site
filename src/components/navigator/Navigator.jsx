@@ -30,36 +30,26 @@ class Navigator extends Component {
     event.preventDefault();
   }
 
+  // On submitting a new command, add to rendered stack
+  // of previously-executed commands.
   handleEnter(event) {
     const { history } = this.props;
     if (event.key == 'Enter') {
       event.preventDefault();
       history.push(this.state.value);
     }
-    // event.preventDefault();
   }
 
-  // Every time submit new command, add it to stack of previoulsy-excuted commands.
-  handleCommand(event) {
-  }
-
-  // Clear the stack of previously-excuted commands displayed in the navigator.
+  // Clear the stack of previously-executed commands
+  // displayed in the navigator.
   clearCommands() {
 
   }
 
   render() {
-    // const { match, location, history } = this.props;
     return (
       <div className="navigator">
-        {/* <button type='button' onClick={() => { history.push('/design')}}> to design we go! </button> */}
         <input onKeyPress={this.handleEnter} onChange={this.handleChange} />
-        {/* <form onSubmit={this.handleSubmit} >
-          <label>
-            Name:
-            <input type="text" value={this.state.value} onChange={this.handleChange}/>
-          </label>
-        </form> */}
       </div>
     )
   }
