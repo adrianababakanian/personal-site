@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {
   BrowserRouter as Router
 } from 'react-router-dom';
-import logo from './logo.svg';
 import Navigator from './components/navigator/Navigator';
 import Nav from './components/nav/Nav';
 import Content from './components/content/Content';

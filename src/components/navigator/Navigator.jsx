@@ -31,14 +31,14 @@ class Navigator extends Component {
   }
 
   handleEnter(event) {
-    if (event.keyCode == 13) {
+    if (event.keyCode === 13) {
       alert("henlo!");
     }
     event.preventDefault();
   }
 
   render() {
-    const { match, location, history } = this.props;
+    // const { match, location, history } = this.props;
     return (
       <div className="navigator">
         {/* <button type='button' onClick={() => { history.push('/design')}}> to design we go! </button> */}
