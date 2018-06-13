@@ -8,9 +8,9 @@ class Terminal extends Component {
   render() {
     let colors = this.props.colors;
     let circle_divs = [];
-    for (let color of colors) {
-      circle_divs.push(<div className={"circle " + color }></div>);
-    }
+    colors.map(color =>
+      circle_divs.push(<div className={"circle " + color }></div>)
+    );
     return (
       <div className="Terminal">
         <div className="terminalHeader">
@@ -32,11 +32,7 @@ class Terminal extends Component {
             love of art history, literature, and sushi along
             the way!
           </div>
-          <div className="terminalLink">
-             &#x1F375;
-            {/* &rarr; */}
-            {/* <div className="bottom"></div> */}
-          </div>
+          <div className="terminalLink"> &#x1F375; </div>
         </div>
       </div>
     );

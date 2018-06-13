@@ -19,9 +19,14 @@ class Content extends Component {
     let header_routes = [];
     let headers = this.props.headers;
     let about = headers[0];
-    let subs = ["Some visual manifestations of my passions for both engineering and art in the form of bluetooth-controlled robots, drawing machines, geared ponds, and more.",
-                "Explorations of data-oriented UGC, interactive user interfaces, machine learning webapps, and branded web development.",
-                "A compilation of some of my branding & marketing schemes, illustrations, product design, and just-for-fun doodles."];
+    let subs = ["Some visual manifestations of my passions for both engineering \
+                 and art in the form of bluetooth-controlled robots, drawing \
+                 machines, geared ponds, and more.",
+                "Explorations of data-oriented UGC, interactive user interfaces, \
+                 machine learning webapps, and branded web development.",
+                "A compilation of some of my branding & marketing schemes, \
+                 illustrations, product design, and just-for-fun doodles."];
+
     header_routes.push(<Route exact path="/" component={ Home } />);
     header_routes.push(<Route exact path="/about" component={ About } />);
     let sliced = headers.slice(1);
