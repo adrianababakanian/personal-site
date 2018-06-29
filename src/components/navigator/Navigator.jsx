@@ -15,9 +15,8 @@ class Navigator extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { show: false, value: '', prev: '' };
+    this.state = { show: false, value: '', commands: [] };
     this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
     this.handleEnter = this.handleEnter.bind(this);
     this.handleClick = this.handleClick.bind(this);
   }
@@ -27,17 +26,9 @@ class Navigator extends Component {
     this.setState({value: event.target.value});
   }
 
-  /* On submitting a new command, send to correct route. */
-  handleSubmit(event) {
-    const { history } = this.props;
-    history.push(this.state.value);
-    this.setState({prev: this.state.value});
-    console.log(this.state.prev);
-    event.preventDefault();
-  }
-
-  /* On submitting a new command, add to rendered stack
-     of previously-executed commands. */
+  /* On submitting a new command, send to correct route
+     and add to rendered stack of previously-executed
+     commands. */
   handleEnter(event) {
     const { history } = this.props;
     if (event.key === 'Enter') {
@@ -48,13 +39,13 @@ class Navigator extends Component {
       }
       else if (commands[0] === 'cd') {
         history.push("/"+commands[1]);
-        this.setState({prev: this.state.value});
-        console.log(this.state.prev);
+        this.setState({commands: this.state.commands.concat([this.state.value])});
       }
       this.setState({value: ''});
     }
   }
 
+  /* Handle toggle button click. */
   handleClick() {
     this.setState({ show: !this.state.show, value: this.state.value });
   }
@@ -62,7 +53,7 @@ class Navigator extends Component {
   /* Clear the stack of previously-executed commands
      displayed in the navigator. */
   clearCommands() {
-
+    this.setState({commands: []});
   }
 
   render() {
@@ -74,7 +65,7 @@ class Navigator extends Component {
           </div> */}
           <div className='history'>
             <HistoryItem command="cd design" />
-            <HistoryItem command={this.state.prev} />
+            {this.state.commands.map(command => <HistoryItem command={command} />)}
             <input onKeyPress={this.handleEnter} onChange={ this.handleChange } />
           </div>
         </Fade>
