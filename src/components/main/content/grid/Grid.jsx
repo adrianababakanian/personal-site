@@ -7,11 +7,11 @@ const Grid = () => {
   return (
     <div className="grid">
       <div className="row">
-        <div className="column">
+        <div className="column right">
           <img src={sand} />
           <img src={tree} />
         </div>
-        <div className="column">
+        <div className="column left">
           <img src={tree} />
           <img src={sand} />
         </div>

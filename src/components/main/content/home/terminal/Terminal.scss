@@ -21,6 +21,7 @@
   .hov {
     cursor: pointer;
     font-style: normal;
+    transition: 0.5s;
     &:hover {
       color: #dab;
       &.sky { color: $sky; }
