@@ -1,11 +1,11 @@
 .navigator {
   width: 420px;
   position: relative;
-  float: left; }
+  float: left;
+  background: white; }
   .navigator .history {
     position: relative;
     height: 100vh;
-    background: lightgray;
     float: left;
     height: calc(100vh - 80px);
     width: calc(100% - 80px);

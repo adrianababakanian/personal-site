@@ -15,10 +15,15 @@ class Navigator extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { show: false, value: '', commands: [] };
+    this.state = { show: true, value: '', commands: [] };
     this.handleChange = this.handleChange.bind(this);
     this.handleEnter = this.handleEnter.bind(this);
+    this.addToHistory = this.addToHistory.bind(this);
     this.handleClick = this.handleClick.bind(this);
+  }
+
+  componentDidMount() {
+    this.commandInput.focus();
   }
 
   /* Handle input field change on user input.  */
@@ -36,13 +41,23 @@ class Navigator extends Component {
       let commands = (this.state.value).split(' ');
       if (commands[1] === '~') {
        history.push("/");
+       this.addToHistory(this.state.value);
       }
       else if (commands[0] === 'cd') {
         history.push("/"+commands[1]);
-        this.setState({commands: this.state.commands.concat([this.state.value])});
+        this.addToHistory(this.state.value);
+      }
+      else if (commands[0] === 'ls') {
+        this.addToHistory('design code prototyping about');
+      } else {
+        this.addToHistory('command not found!');
       }
       this.setState({value: ''});
     }
+  }
+
+  addToHistory(command) {
+    this.setState({commands: this.state.commands.concat([command])});
   }
 
   /* Handle toggle button click. */
@@ -62,7 +77,10 @@ class Navigator extends Component {
         <Fade left when={ this.state.show }>
           <div className='history'>
             {this.state.commands.map(command => <HistoryItem command={command} />)}
-            <input onKeyPress={this.handleEnter} onChange={ this.handleChange } value={this.state.value} />
+            <input ref={(input) => { this.commandInput = input; }}
+                   onKeyPress={this.handleEnter}
+                   onChange={ this.handleChange }
+                   value={this.state.value} />
           </div>
         </Fade>
         <button className='toggle' type='button' onClick={ this.handleClick }>
