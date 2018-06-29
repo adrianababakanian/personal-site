@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Muli|Puritan|Karla|Domine");
+@import url("https://fonts.googleapis.com/css?family=Muli|Puritan|Karla|Domine|Cousine");
 body {
   color: #253044;
   background: #f5f7f944; }
@@ -20,7 +20,8 @@ body {
     font-weight: bold; }
   .Terminal .hov {
     cursor: pointer;
-    font-style: normal; }
+    font-style: normal;
+    transition: 0.2s; }
     .Terminal .hov:hover {
       color: #dab; }
       .Terminal .hov:hover.sky {
@@ -47,7 +48,8 @@ body {
       margin: 12.5px 5px 12.5px 5px;
       border-radius: 30px;
       background: pink;
-      float: left; }
+      float: left;
+      transition: 0.3s; }
       .Terminal .circleWrap .circle:hover {
         transform: scale(1.2); }
       .Terminal .circleWrap .circle.sky {

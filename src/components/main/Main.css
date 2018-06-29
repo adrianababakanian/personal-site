@@ -1,6 +1,5 @@
 .main {
-  /* width: calc(100vw - 500px); */
-  width: 100vw;
+  width: calc(100vw - 420px);
   float: left;
   position: absolute;
   right: 0;
@@ -8,4 +7,5 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   z-index: 5000;
   display: flex;
-  flex-flow: column nowrap; }
+  flex-flow: column nowrap;
+  float: left; }

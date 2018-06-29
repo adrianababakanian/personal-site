@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Fade from 'react-reveal/Fade';
+import HistoryItem from './history-item/HistoryItem';
 import './Navigator.css';
 
 class Navigator extends Component {
@@ -14,22 +15,24 @@ class Navigator extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { show: false, value: '' };
+    this.state = { show: false, value: '', prev: '' };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleEnter = this.handleEnter.bind(this);
     this.handleClick = this.handleClick.bind(this);
   }
 
+  /* Handle input field change on user input.  */
   handleChange(event) {
     this.setState({value: event.target.value});
   }
 
-  /* On submitting a new command, add to rendered stack
-     of previously-executed commands. */
+  /* On submitting a new command, send to correct route. */
   handleSubmit(event) {
     const { history } = this.props;
     history.push(this.state.value);
+    this.setState({prev: this.state.value});
+    console.log(this.state.prev);
     event.preventDefault();
   }
 
@@ -45,7 +48,10 @@ class Navigator extends Component {
       }
       else if (commands[0] === 'cd') {
         history.push("/"+commands[1]);
+        this.setState({prev: this.state.value});
+        console.log(this.state.prev);
       }
+      this.setState({value: ''});
     }
   }
 
@@ -61,12 +67,16 @@ class Navigator extends Component {
 
   render() {
     return (
-      <div className='navigation'>
+      <div className='navigator'>
         <Fade left when={ this.state.show }>
           {/* <div className="navigator">
             <input onKeyPress={this.handleEnter} onChange={ this.handleChange } />
           </div> */}
-          <input className='navigator' onKeyPress={this.handleEnter} onChange={ this.handleChange } />
+          <div className='history'>
+            <HistoryItem command="cd design" />
+            <HistoryItem command={this.state.prev} />
+            <input onKeyPress={this.handleEnter} onChange={ this.handleChange } />
+          </div>
         </Fade>
         <button className='toggle' type='button' onClick={ this.handleClick }>
           { this.state.show? 'Hide' : 'Show' } Terminal!

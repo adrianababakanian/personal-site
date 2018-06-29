@@ -1,26 +1,34 @@
-.navigation {
+.navigator {
+  width: 420px;
+  position: relative;
+  float: left;
 
-  .navigator input {
-    width: 420px;
+  .history {
+    position: relative;
     height: 100vh;
     background: lightgray;
-    z-index: 2000;
-    position: relative;
+    float: left;
+    height: calc(100vh - 80px);
+    width: calc(100% - 80px);
+    margin: 0;
+    padding: 40px;
 
-
-      height: calc(100vh - 80px);
-      width: 100%;
-      position: absolute;
-      margin: 0;
-      font-family: Muli, sans-serif;
+    input {
+      padding: 8px 0;
+      font-family: Cousine, serif;
       font-size: 16px;
-      padding: 40px;
+      width: 100%;
       outline: 0;
       border: none;
-
       &:focus {
         outline: 0;
       }
+    }
 
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
   }
 }

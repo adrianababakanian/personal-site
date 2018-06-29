@@ -21,7 +21,7 @@
   .hov {
     cursor: pointer;
     font-style: normal;
-    transition: 0.5s;
+    transition: 0.2s;
     &:hover {
       color: #dab;
       &.sky { color: $sky; }
@@ -52,6 +52,7 @@
       border-radius: 30px;
       background: pink;
       float: left;
+      transition: 0.3s;
       &:hover {
         transform: scale(1.2);
       }

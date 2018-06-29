@@ -1,17 +1,26 @@
-.navigation .navigator input {
+.navigator {
   width: 420px;
-  height: 100vh;
-  background: lightgray;
-  z-index: 2000;
   position: relative;
-  height: calc(100vh - 80px);
-  width: 100%;
-  position: absolute;
-  margin: 0;
-  font-family: Muli, sans-serif;
-  font-size: 16px;
-  padding: 40px;
-  outline: 0;
-  border: none; }
-  .navigation .navigator input:focus {
-    outline: 0; }
+  float: left; }
+  .navigator .history {
+    position: relative;
+    height: 100vh;
+    background: lightgray;
+    float: left;
+    height: calc(100vh - 80px);
+    width: calc(100% - 80px);
+    margin: 0;
+    padding: 40px; }
+    .navigator .history input {
+      padding: 8px 0;
+      font-family: Cousine, serif;
+      font-size: 16px;
+      width: 100%;
+      outline: 0;
+      border: none; }
+      .navigator .history input:focus {
+        outline: 0; }
+    .navigator .history button {
+      position: absolute;
+      top: 0;
+      right: 0; }
