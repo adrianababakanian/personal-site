@@ -60,13 +60,9 @@ class Navigator extends Component {
     return (
       <div className='navigator'>
         <Fade left when={ this.state.show }>
-          {/* <div className="navigator">
-            <input onKeyPress={this.handleEnter} onChange={ this.handleChange } />
-          </div> */}
           <div className='history'>
-            <HistoryItem command="cd design" />
             {this.state.commands.map(command => <HistoryItem command={command} />)}
-            <input onKeyPress={this.handleEnter} onChange={ this.handleChange } />
+            <input onKeyPress={this.handleEnter} onChange={ this.handleChange } value={this.state.value} />
           </div>
         </Fade>
         <button className='toggle' type='button' onClick={ this.handleClick }>
