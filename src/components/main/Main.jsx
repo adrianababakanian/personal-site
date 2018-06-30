@@ -6,7 +6,7 @@ import './Main.css';
 const Main = (props) => {
   let headers = [["About", "blue"], ["Prototyping", "orange"], ["Code", "green"], ["Design", "sky"]];
   return (
-    <div className="main">
+    <div className={"main " + props.navigator}>
       <Nav headers={ headers } />
       <Content headers={ headers } />
     </div>

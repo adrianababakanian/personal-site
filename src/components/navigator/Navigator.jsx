@@ -15,21 +15,19 @@ class Navigator extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { show: true, value: '', commands: [] };
+    this.state = { value: '',
+                   commands: [] };
     this.handleChange = this.handleChange.bind(this);
     this.handleEnter = this.handleEnter.bind(this);
     this.addToHistory = this.addToHistory.bind(this);
     this.handleClick = this.handleClick.bind(this);
   }
 
-  componentDidMount() {
-    this.commandInput.focus();
-  }
+  /* Focus form input on initial render. */
+  componentDidMount() { this.commandInput.focus(); }
 
-  /* Handle input field change on user input.  */
-  handleChange(event) {
-    this.setState({value: event.target.value});
-  }
+  /* Handle input field change on user input. */
+  handleChange(event) { this.setState({value: event.target.value}); }
 
   /* On submitting a new command, send to correct route
      and add to rendered stack of previously-executed
@@ -49,6 +47,10 @@ class Navigator extends Component {
       }
       else if (commands[0] === 'ls') {
         this.addToHistory('design code prototyping about');
+      }
+      else if (commands[0] === 'close') {
+        this.props.onNavigatorChange()
+        // this.setState({show: false});
       } else {
         this.addToHistory('command not found!');
       }
@@ -62,29 +64,31 @@ class Navigator extends Component {
 
   /* Handle toggle button click. */
   handleClick() {
-    this.setState({ show: !this.state.show, value: this.state.value });
+    this.setState({ value: this.state.value });
+    this.props.onNavigatorChange();
   }
 
   /* Clear the stack of previously-executed commands
      displayed in the navigator. */
-  clearCommands() {
-    this.setState({commands: []});
-  }
+  clearCommands() { this.setState({commands: []}); }
 
   render() {
     return (
       <div className='navigator'>
-        <Fade left when={ this.state.show }>
+        <Fade left when={ this.props.navigator }>
           <div className='history'>
             {this.state.commands.map(command => <HistoryItem command={command} />)}
-            <input ref={(input) => { this.commandInput = input; }}
-                   onKeyPress={this.handleEnter}
-                   onChange={ this.handleChange }
-                   value={this.state.value} />
+            <div className='current'>
+              <div className='prompt'> > </div>
+              <input ref={(input) => { this.commandInput = input; }}
+                     onKeyPress={this.handleEnter}
+                     onChange={ this.handleChange }
+                     value={this.state.value} />
+            </div>
           </div>
         </Fade>
         <button className='toggle' type='button' onClick={ this.handleClick }>
-          { this.state.show? 'Hide' : 'Show' } Terminal!
+          { this.props.navigator? 'Hide' : 'Show' } Terminal!
         </button>
       </div>
     )

@@ -1,5 +1,5 @@
 .main {
-  width: calc(100vw - 420px);
+  width: calc(100vw);
   float: left;
   position: absolute;
   right: 0;
@@ -9,4 +9,8 @@
   display: flex;
   flex-flow: column nowrap;
   float: left;
+
+  &.true {
+    width: calc(100vw - 420px);
+  }
 }
