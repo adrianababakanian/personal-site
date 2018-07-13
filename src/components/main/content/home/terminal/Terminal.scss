@@ -1,4 +1,4 @@
-@import './../../../../../assets/style/common.scss';
+@import 'src/assets/style/common.scss';
 
 .Terminal {
   width: 420px;
@@ -24,9 +24,9 @@
     transition: 0.2s;
     &:hover {
       color: #dab;
-      &.sky { color: $sky; }
-      &.orange { color: $orange; }
-      &.green {color: $green; }
+      &.sky { color: #{map-get($colors, cycle)}; }
+      &.orange { color: #{map-get($colors, atomic)}; }
+      &.green {color: #{map-get($colors, matcha)}; }
     }
   }
 
@@ -50,15 +50,14 @@
       height: 15px;
       margin: 12.5px 5px 12.5px 5px;
       border-radius: 30px;
-      background: pink;
       float: left;
       transition: 0.3s;
       &:hover {
         transform: scale(1.2);
       }
-      &.sky { background: $sky; }
-      &.orange { background: $orange; }
-      &.green {background: $green; }
+      &.sky { background: #{map-get($colors, cycle)}; }
+      &.orange { background: #{map-get($colors, atomic)}; }
+      &.green {background: #{map-get($colors, matcha)}; }
     }
   }
 

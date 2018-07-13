@@ -5,12 +5,12 @@ import './Home.css';
 class Home extends Component {
   render() {
     return (
-      <div className="pageWrap homePage">
+      <div className="Home">
         <Terminal colors={[
           "sky",
           "green",
           "orange"
-        ]}/>
+        ]} onNavigatorChange={ this.props.onNavigatorChange }/>
       </div>
     )
   }

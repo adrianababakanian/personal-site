@@ -1,18 +1,60 @@
-$font-color: #253044;
-$blue: #475dcc;
-$orange: #f9886c;
-$green: #b0e695;
-$sky: #75CFFF;
-$yellow: #ebc446;
+/* Unified color, font, & styling assets.
+ * Include this stylesheet using an absolute path import:
+ * @import 'src/assets/style/common.scss'. */
 
-$gradient: -webkit-linear-gradient(-60deg,
-                                    rgba(204, 178, 213, 0.9),
-                                    rgba(189, 104, 170, 0.7),
-                                    rgba(240, 166, 178, 1)
-                                    70%);
+/* Google Font imports. */
 @import url('https://fonts.googleapis.com/css?family=Muli|Puritan|Karla|Domine|Cousine');
 
-body {
-  color: $font-color;
-  background: #f5f7f944;
+/* Variable defintions. */
+$body: Muli, sans-serif;
+$title: Karla, sans-serif;
+$header: Puritan, serif;
+$serif: Domine, serif;
+$editor: Cousine, serif;
+
+/* Color definitions. */
+$colors: (
+  cycle: #93D9FF,
+  matcha: #B0E695,
+  atomic: #F9886C,
+  california: #FFC681,
+  sakura: #EAD2DC,
+
+  atom: #253044,
+  ghost: #f5f7f944
+);
+
+/* Font definitions.
+ * Weight size family, line height.
+ */
+$fonts: (
+  section-title: (800 24px $title, "initial"),
+  section-subtitle: (100 16px $body, 24px),
+
+  terminal-title:(normal 26px $header, "initial"),
+  terminal-main: (normal 18px $body, 27px),
+  terminal-sub: (normal 14px $body, 20px)
+);
+
+/* Unified z-indexing. */
+$layers: (
+
+);
+
+/* Animation definitions. */
+$animations: (
+
+);
+
+/* Media query breakpoints. */
+$breakpoints: (
+
+);
+
+@function breakpoint-and-above ($end) {
+  @return "only screen and (min-width: #{map-get($breakpoints, '#{$end}-start')})";
+}
+
+@function breakpoint-and-below ($end) {
+  @return "only screen and (max-width: #{map-get($breakpoints, '#{$end}-end')})";
 }

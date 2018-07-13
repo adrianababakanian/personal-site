@@ -1,8 +1,16 @@
+/* Unified color, font, & styling assets.
+ * Include this stylesheet using an absolute path import:
+ * @import 'src/assets/style/common.scss'. */
+/* Google Font imports. */
 @import url("https://fonts.googleapis.com/css?family=Muli|Puritan|Karla|Domine|Cousine");
-body {
-  color: #253044;
-  background: #f5f7f944; }
-
+/* Variable defintions. */
+/* Color definitions. */
+/* Font definitions.
+ * Weight size family, line height.
+ */
+/* Unified z-indexing. */
+/* Animation definitions. */
+/* Media query breakpoints. */
 .Terminal {
   width: 420px;
   height: 490px;
@@ -25,11 +33,11 @@ body {
     .Terminal .hov:hover {
       color: #dab; }
       .Terminal .hov:hover.sky {
-        color: #75CFFF; }
+        color: #93D9FF; }
       .Terminal .hov:hover.orange {
-        color: #f9886c; }
+        color: #F9886C; }
       .Terminal .hov:hover.green {
-        color: #b0e695; }
+        color: #B0E695; }
   .Terminal .terminalHeader {
     width: 100%;
     height: 40px;
@@ -47,17 +55,16 @@ body {
       height: 15px;
       margin: 12.5px 5px 12.5px 5px;
       border-radius: 30px;
-      background: pink;
       float: left;
       transition: 0.3s; }
       .Terminal .circleWrap .circle:hover {
         transform: scale(1.2); }
       .Terminal .circleWrap .circle.sky {
-        background: #75CFFF; }
+        background: #93D9FF; }
       .Terminal .circleWrap .circle.orange {
-        background: #f9886c; }
+        background: #F9886C; }
       .Terminal .circleWrap .circle.green {
-        background: #b0e695; }
+        background: #B0E695; }
   .Terminal .terminalText {
     width: 70%;
     margin: 0 auto;

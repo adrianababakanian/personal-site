@@ -1,8 +1,16 @@
+/* Unified color, font, & styling assets.
+ * Include this stylesheet using an absolute path import:
+ * @import 'src/assets/style/common.scss'. */
+/* Google Font imports. */
 @import url("https://fonts.googleapis.com/css?family=Muli|Puritan|Karla|Domine|Cousine");
-body {
-  color: #253044;
-  background: #f5f7f944; }
-
+/* Variable defintions. */
+/* Color definitions. */
+/* Font definitions.
+ * Weight size family, line height.
+ */
+/* Unified z-indexing. */
+/* Animation definitions. */
+/* Media query breakpoints. */
 .preview {
   width: 50%;
   height: 330px;
@@ -28,13 +36,13 @@ body {
     cursor: pointer;
     transition: 0.5s; }
     .preview .layover.orange {
-      background: #f9886c; }
+      background: #F9886C; }
     .preview .layover.green {
-      background: #b0e695; }
+      background: #B0E695; }
     .preview .layover.sky {
-      background: #75CFFF; }
+      background: #93D9FF; }
     .preview .layover.blue {
-      background: #475dcc; }
+      background: #EAD2DC; }
     .preview .layover:hover {
       opacity: 1;
       cursor: pointer; }

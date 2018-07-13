@@ -1,4 +1,9 @@
-@import './../../../assets/style/common.scss';
+@import 'src/assets/style/common.scss';
+
+$cycle: #{map-get($colors, cycle)};
+$atomic: #{map-get($colors, atomic)};
+$matcha: #{map-get($colors, matcha)};
+$sakura: #{map-get($colors, sakura)};
 
 nav {
   width: 100%;
@@ -41,18 +46,22 @@ nav {
 
       &.activeHeaderDiv {
         font-weight: bold;
-
-        &.orange { color: $orange; border-bottom: 2px solid $orange; }
-
-        &.green { color: $green; border-bottom: 2px solid $green; }
-
-        &.sky { color: $sky; border-bottom: 2px solid $sky; }
-
-        &.blue { color: $blue; border-bottom: 2px solid $blue; }
+        &.orange { color: $atomic; border-bottom: 2px solid $atomic; }
+        &.green { color: $matcha; border-bottom: 2px solid $matcha; }
+        &.sky { color: $cycle; border-bottom: 2px solid $cycle; }
+        &.blue { color: $sakura; border-bottom: 2px solid $sakura; }
       }
 
       &:hover {
         font-weight: bold;
+      }
+    }
+
+    @media (max-width: 800px) {
+      width: 100%;
+
+      .headerDiv {
+        display: none;
       }
     }
   }

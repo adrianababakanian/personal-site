@@ -6,14 +6,13 @@ const Section = (props) => {
   let color = props.color;
 
   return (
-    <div className="sectionWrapper">
+    <div className="Section">
       <div className="sectionTitle"> { props.page } </div>
       <div className="sectionSubtitle"> { props.sub } </div>
       <Preview title={"testing"} color={color}/>
       <Preview title={"testing"} color={color}/>
       <Preview title={"testing"} color={color}/>
       <Preview title={"testing"} color={color}/>
-      {/* { previews } */}
     </div>
   )
 }

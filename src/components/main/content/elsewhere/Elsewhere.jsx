@@ -15,10 +15,10 @@ const Elsewhere = () => {
   }
   return (
     <div className="elsewhere">
-      <Github colorStyle={"#f9886c"} />
-      <Linkedin colorStyle={"#ebc446"}/>
-      <Pinterest colorStyle={"#b0e695"}/>
-      <Email colorStyle={"#75cff0"}/>
+      <Github colorStyle={"#75cff0"} />
+      <Linkedin colorStyle={"#b0e695"}/>
+      <Pinterest colorStyle={"#f9886c"}/>
+      <Email colorStyle={"#f2ce47"}/>
       <Dribbble colorStyle={"#475dcc"}/>
     </div>
   );

@@ -1,4 +1,4 @@
-@import './../../../../../assets/style/common.scss';
+@import 'src/assets/style/common.scss';
 
 .preview {
   width: 50%;
@@ -26,13 +26,13 @@
     cursor: pointer;
     transition: 0.5s;
 
-    &.orange { background: $orange; }
+    &.orange { background: #{map-get($colors, atomic)}; }
 
-    &.green { background: $green; }
+    &.green { background: #{map-get($colors, matcha)}; }
 
-    &.sky { background: $sky; }
+    &.sky { background: #{map-get($colors, cycle)}; }
 
-    &.blue { background: $blue; }
+    &.blue { background: #{map-get($colors, sakura)}; }
 
     &:hover {
       opacity: 1;

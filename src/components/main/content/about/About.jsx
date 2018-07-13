@@ -2,7 +2,7 @@ import React from 'react';
 import Elsewhere from './../elsewhere/Elsewhere';
 import Resume from './resume/Resume';
 import './About.css';
-import me from './../../../../assets/images/me.png';
+import me from './../../../../assets/images/adriana.jpg';
 
 const About = () => {
   return (

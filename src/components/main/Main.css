@@ -1,13 +1,14 @@
-.main {
+.Main {
   width: calc(100vw);
   float: left;
-  position: absolute;
-  right: 0;
   clear: both;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   z-index: 5000;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-flow: column nowrap;
-  float: left; }
-  .main.true {
+  float: left;
+  transition: 0.8s; }
+  .Main.true {
     width: calc(100vw - 420px); }

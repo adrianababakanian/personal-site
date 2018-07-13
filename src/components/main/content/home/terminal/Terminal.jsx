@@ -28,7 +28,7 @@ const Terminal = (props) => {
           love of art history, literature, and sushi along
           the way!
         </div>
-        <div className="terminalLink">
+        <div className="terminalLink" >
           <span role="img" aria-label="matcha">&#x1F375;</span>
         </div>
       </div>
