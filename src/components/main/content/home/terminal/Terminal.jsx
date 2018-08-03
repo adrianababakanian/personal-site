@@ -9,9 +9,9 @@ const Terminal = (props) => {
   );
   return (
     <div className="Terminal">
-      <div className="terminalHeader">
+      {/* <div className="terminalHeader">
         <div className="circleWrap"> { circle_divs } </div>
-      </div>
+      </div> */}
       <div className="terminalText">
         <div className="terminalTitle">Hello world!</div>
         <div className="terminalMain">
